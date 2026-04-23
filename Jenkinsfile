@@ -22,8 +22,8 @@ pipeline {
 
         success {
             emailext(
-                to: 'iheckinlovetenzkekw@gmail.com',
-                subject: "✅ BUILD SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                to: 'aryanatharv03@gmail.com',
+                subject: " BUILD SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                 <h2>Build Successful</h2>
                 <p><b>Job:</b> ${env.JOB_NAME}</p>
@@ -36,8 +36,8 @@ pipeline {
 
         failure {
             emailext(
-                to: 'iheckinlovetenzkekw@gmail.com',
-                subject: "❌ BUILD FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                to: 'aryanatharv03@gmail.com',
+                subject: " BUILD FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                 <h2>Build Failed</h2>
                 <p><b>Job:</b> ${env.JOB_NAME}</p>
